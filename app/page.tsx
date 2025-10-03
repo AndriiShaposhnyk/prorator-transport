@@ -3,7 +3,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
       <section className="text-center p-8">
         <h1 className="text-4xl font-bold text-gray-900">
-          Prorator Transportnslookup 
+          Prorator Transport
         </h1>
         <p className="mt-4 text-lg text-gray-600">
           Reliable Logistics Solutions Across United States and Canada
