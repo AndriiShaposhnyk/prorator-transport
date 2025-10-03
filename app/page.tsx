@@ -4,6 +4,7 @@ export default function Home() {
       <section className="text-center p-8">
         <h1 className="text-4xl font-bold text-gray-900">
           Prorator Transport
+          HELLO FROM UKRAINE TO CANADA
         </h1>
         <p className="mt-4 text-lg text-gray-600">
           Reliable Logistics Solutions Across United States and Canada
