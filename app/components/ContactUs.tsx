@@ -18,7 +18,7 @@ export default function ContactUs() {
               </a>
             </p>
             <p className="text-gray-600 mt-4">
-              Hours: Mon–Fri, 8:00–18:00 (ET)
+              Hours: Mon&ndash;Fri, 8:00&ndash;18:00 (ET)
             </p>
           </div>
           <div className="rounded-2xl border p-4 bg-gray-50">
