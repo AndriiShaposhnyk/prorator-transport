@@ -15,7 +15,7 @@ The project includes both the **frontend (Next.js)** and **backend (Node.js / Ex
 - **Framework:** Next.js (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **Rendering:** Server-Side Rendering (SSR) + Static Generation (SSG)
+- **Rendering:**    
 - **UI Design & Layout:** Custom responsive components and layouts built manually without templates
 
 ### ⚙️ Backend
@@ -46,5 +46,4 @@ The project includes both the **frontend (Next.js)** and **backend (Node.js / Ex
 **Andrii Shaposhnyk** — Full-Stack Developer (Frontend + Backend)  
 Responsible for **design, content, layout, logic, backend integration, and deployment**.
 
-📧 Contact: [andrii.shaposhnyk.dev@gmail.com](mailto:andrii.shaposhnyk.dev@gmail.com)
-🌐 Portfolio: [www.proratortransport.ca](https://www.proratortransport.ca)
+📧 Contact: [andrii.shaposhnyk@gmail.com]
