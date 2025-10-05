@@ -1,17 +1,23 @@
+import Services from "./components/Services";
+import Fleet from "./components/Fleet";
+import AboutUs from "./components/AboutUs";
+import Quote from "./components/Quote";
+import OwnerOperator from "./components/OwnerOperator";
+import ContactUs from "./components/ContactUs";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
-      <section className="text-center p-8">
-        <h1 className="text-4xl font-bold text-gray-900">
-          Prorator Transport Inc.
-        </h1>
-        <p className="mt-4 text-lg text-gray-600">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
+      <section id="home" className="scroll-mt-24 text-center p-8">
+        <h1 className="text-3xl text-gray-900">
           Reliable Logistics Solutions Across United States and Canada
-        </p>
-        <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-          Get a Quote
-        </button>
+        </h1>
       </section>
-    </main>
-  );
+      <Services />
+      <Fleet />
+      <AboutUs />
+      <Quote />
+      <OwnerOperator />
+      <ContactUs />
+      </div>
+);
 }
