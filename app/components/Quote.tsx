@@ -8,7 +8,7 @@ export default function Quote() {
     >
       <h2 className="text-4xl font-bold mb-4">Get a Quote</h2>
       <p className="text-gray-600 text-2xl mb-6">
-        Leave a transportation request and we'll get back to you with details
+        Leave a transportation request and we&apos;ll get back to you with details
         and pricing.
       </p>
       <QuoteForm />
