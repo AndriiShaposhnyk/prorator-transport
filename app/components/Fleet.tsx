@@ -7,7 +7,9 @@ export default function Fleet() {
           reliable, efficient, and perfect for time-critical deliveries. Each vehicle is fully insured, 
           GPS-equipped, and regularly maintained to ensure top performance on every route. Our vans are ideal for expedited, 
           cross-border, and regional transport across Canada and the United States. 
-          Whether it’s same-day or next-day delivery, <strong className="italic">Prorator Transport Inc.</strong> ensures every load arrives safely and on time.</p>
+          Whether it’s same-day or next-day delivery, <strong className="italic">Prorator Transport Inc.</strong> 
+          ensures every load arrives safely and on time.
+          </p>
         </div>
     </section>
   );
