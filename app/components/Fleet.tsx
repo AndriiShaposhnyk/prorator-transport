@@ -10,7 +10,7 @@ export default function Fleet() {
           performance on every route. Our vans are ideal for expedited,
           cross-border, and regional transport across Canada and the United
           States. Whether it&apos;s same-day or next-day delivery,{" "}
-          <strong className="italic">Prorator Transport Inc.</strong>
+          <strong className="text-gray-900 font-semibold italic">Prorator Transport Inc.</strong>
           ensures every load arrives safely and on time.
         </p>
       </div>
