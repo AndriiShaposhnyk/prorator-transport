@@ -18,6 +18,6 @@ export default function Home() {
       <Quote />
       <OwnerOperator />
       <ContactUs />
-      </div>
-);
+    </div>
+  );
 }
