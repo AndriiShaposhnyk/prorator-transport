@@ -1,11 +1,12 @@
 export default function AboutUs() {
   return (
-    <section id="about" className="scroll-mt-24 w-full bg-white">
-      <div className="container mx-auto max-w-7xl px-4 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-center">About Us</h2>
-        <p className="text-center text-gray-600 leading-relaxed">
+    <section id="about" className="scroll-mt-24 relative w-full min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('/img/road.jpg')" }}>
+      <div className="container mx-auto max-w-7xl px-4 py-16 rounded-2xl bg-white/3 backdrop-blur-xl shadow-lg hover:shadow-xl transition">
+        <h2 className="text-5xl font-bold mb-6 text-center">About Us</h2>
+        <p className="text-center text-white font-bold text-2xl leading-relaxed">
           For over 20 years,{" "}
-          <strong className="text-gray-900 font-semibold italic">
+          <strong className="text-black text-2xl font-semibold italic">
             Prorator Transport Inc.
           </strong>{" "}
           has been providing reliable and time-critical delivery services across

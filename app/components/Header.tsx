@@ -1,66 +1,51 @@
-import Image from "next/image";
-
 export default function Header() {
   return (
-    <header className="w-full bg-white shadow-md">
-      <div className="container mx-auto flex flex-col items-center px-6 py-4">
-        {/* Лого */}
-        <div className="mb-6">
-          <Image
-            src="/ProratorLogoRight.jpeg"
-            alt="Prorator Transport Logo"
-            width={600}
-            height={600}
-            className="mx-auto"
-          />
-        </div>
-
+    <header className="absolute top-0 left-0 w-full z-20 flex justify-center pt-20">
         {/* Навігація */}
-        <nav className="flex space-x-8 mt-8">
+        <nav className="flex space-x-8 mt-8 text-white text-lg font-semibold">
           <a
             href="#home"
-            className="text-2xl font-bold text-gray-700 hover:text-blue-600"
+            className="text-3xl hover:text-black transition-colors"
           >
             Home
           </a>
           <a
             href="#services"
-            className="text-2xl font-bold text-gray-700 hover:text-blue-600"
+            className="text-3xl hover:text-black transition-colors"
           >
             Services
           </a>
           <a
             href="#fleet"
-            className="text-2xl font-bold text-gray-700 hover:text-blue-600"
+            className="text-3xl hover:text-black transition-colors"
           >
             Fleet
           </a>
           <a
             href="#about"
-            className="text-2xl font-bold text-gray-700 hover:text-blue-600"
+            className="text-3xl hover:text-black transition-colors"
           >
             About Us
           </a>
           <a
             href="#quote"
-            className="text-2xl font-bold text-gray-700 hover:text-blue-600"
+            className="text-3xl hover:text-black transition-colors"
           >
             Get a Quote
           </a>
           <a
             href="#apply"
-            className="text-2xl font-bold text-gray-700 hover:text-blue-600"
+            className="text-3xl hover:text-black transition-colors"
           >
             Apply as owner-operator
           </a>
           <a
             href="#contact-us"
-            className="text-2xl font-bold text-gray-700 hover:text-blue-600"
+            className="text-3xl hover:text-black transition-colors"
           >
             Contact
           </a>
         </nav>
-      </div>
     </header>
   );
 }

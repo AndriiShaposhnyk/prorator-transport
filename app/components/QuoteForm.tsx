@@ -51,13 +51,15 @@ export default function QuoteForm() {
       });
     } catch (err: unknown) {
       const message =
-      err instanceof Error ? err.message : "Submission failed. Please try again.";
+        err instanceof Error
+          ? err.message
+          : "Submission failed. Please try again.";
       alert(message);
     }
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-4 text-left">
+    <form onSubmit={onSubmit} className="space-y-4 text-left max-w-md mx-auto">
       <input
         className="w-full border p-2 rounded"
         placeholder="Name *"
@@ -95,11 +97,20 @@ export default function QuoteForm() {
       />
       <input
         className="w-full border p-2 rounded"
-        type="datetime-local"
+        type="text"
         placeholder="Pickup date and time"
         value={form.date}
         onChange={(e) => setForm({ ...form, date: e.target.value })}
       />
+
+            <input
+        className="w-full border p-2 rounded"
+        type="text"
+        placeholder="Dropoff date and time"
+        value={form.date}
+        onChange={(e) => setForm({ ...form, date: e.target.value })}
+      />
+
       <input
         className="w-full border p-2 rounded"
         type="number"
@@ -115,7 +126,7 @@ export default function QuoteForm() {
       />
       <button
         type="submit"
-        className="w-full rounded bg-blue-600 text-white py-2 hover:bg-blue-700 transition"
+        className="w-full rounded bg-black text-white font-bold py-2 transition hover:bg-white hover:text-black cursor-pointer border border-black"
       >
         Submit
       </button>
