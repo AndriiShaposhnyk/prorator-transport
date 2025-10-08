@@ -89,7 +89,7 @@ export default function ContactUs() {
         <p>
           Phone:{" "}
           <a className="underline" href="tel:+1-555-000-0000">
-            +1 (555) 000-0000
+            +1 (647) 615-9291
           </a>
         </p>
         <p>Location: Mississauga, Ontario</p>

@@ -20,10 +20,10 @@ export default function OwnerOperator() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 font-bold">
           {[
             "Cross-border loads (US↔CA)",
-            "Weekly settlements",
+            "Biweekly settlements",
             "24/7 dispatch & support",
-            "Fuel surcharge program",
-            "Consistent lanes",
+            "Fuel card Program",
+            "Long and short hauls",
             "Safety-first culture",
           ].map((b) => (
             <div

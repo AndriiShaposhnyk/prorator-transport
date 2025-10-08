@@ -5,7 +5,6 @@ export default function AboutUs() {
       <div className="container mx-auto max-w-7xl px-4 py-16 rounded-2xl bg-white/3 backdrop-blur-xl shadow-lg hover:shadow-xl transition">
         <h2 className="text-5xl font-bold mb-6 text-center">About Us</h2>
         <p className="text-center text-white font-bold text-2xl leading-relaxed">
-          For over 20 years,{" "}
           <strong className="text-black text-2xl font-semibold italic">
             Prorator Transport Inc.
           </strong>{" "}
