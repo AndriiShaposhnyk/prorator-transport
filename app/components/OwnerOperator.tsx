@@ -22,7 +22,7 @@ export default function OwnerOperator() {
             "Cross-border loads (US↔CA)",
             "Biweekly settlements",
             "24/7 dispatch & support",
-            "Fuel card Program",
+            "Fuel card program",
             "Long and short hauls",
             "Safety-first culture",
           ].map((b) => (
