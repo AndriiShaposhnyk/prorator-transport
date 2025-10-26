@@ -29,6 +29,7 @@ export default function Services() {
               Seamless transportation between Canada and the U.S. We handle
               customs documentation and ensure smooth, compliant deliveries for
               all types of cargo.
+              <br /> ACE, ACI, ATA CARNET
             </p>
           </div>
 
@@ -40,7 +41,6 @@ export default function Services() {
               Time-critical delivery when every minute counts. Perfect for
               parts, equipment, or high-priority materials requiring same-day or
               next-day delivery.
-              <br /> ATA CARNET
             </p>
           </div>
 

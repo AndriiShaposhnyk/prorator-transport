@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+
 export default function QuoteForm() {
   const [form, setForm] = useState({
     name: "",
@@ -8,8 +9,9 @@ export default function QuoteForm() {
     phone: "",
     pickup: "",
     dropoff: "",
-    date: "",
-    payloadKg: "",
+    pickupDate: "",   
+    dropoffDate: "",  
+    payloadLbs: "",   
     notes: "",
   });
 
@@ -25,8 +27,10 @@ export default function QuoteForm() {
           phone: form.phone,
           pickup: form.pickup,
           dropoff: form.dropoff,
-          date: form.date,
-          payloadKg: form.payloadKg ? Number(form.payloadKg) : null,
+          pickupDate: form.pickupDate || null,
+          dropoffDate: form.dropoffDate || null,
+          payloadLbs:
+            form.payloadLbs.trim() === "" ? null : Number(form.payloadLbs),
           notes: form.notes,
         }),
       });
@@ -45,15 +49,14 @@ export default function QuoteForm() {
         phone: "",
         pickup: "",
         dropoff: "",
-        date: "",
-        payloadKg: "",
+        pickupDate: "",
+        dropoffDate: "",
+        payloadLbs: "",
         notes: "",
       });
     } catch (err: unknown) {
       const message =
-        err instanceof Error
-          ? err.message
-          : "Submission failed. Please try again.";
+        err instanceof Error ? err.message : "Submission failed. Please try again.";
       alert(message);
     }
   }
@@ -95,35 +98,38 @@ export default function QuoteForm() {
         onChange={(e) => setForm({ ...form, dropoff: e.target.value })}
         required
       />
+
       <input
         className="w-full border p-2 rounded"
         type="text"
         placeholder="Pickup date and time"
-        value={form.date}
-        onChange={(e) => setForm({ ...form, date: e.target.value })}
+        value={form.pickupDate}
+        onChange={(e) => setForm({ ...form, pickupDate: e.target.value })}
       />
 
-            <input
+      <input
         className="w-full border p-2 rounded"
         type="text"
         placeholder="Dropoff date and time"
-        value={form.date}
-        onChange={(e) => setForm({ ...form, date: e.target.value })}
+        value={form.dropoffDate}
+        onChange={(e) => setForm({ ...form, dropoffDate: e.target.value })}
       />
 
       <input
         className="w-full border p-2 rounded"
         type="number"
-        placeholder="Payload (kg)"
-        value={form.payloadKg}
-        onChange={(e) => setForm({ ...form, payloadKg: e.target.value })}
+        placeholder="Payload (lbs)"
+        value={form.payloadLbs}
+        onChange={(e) => setForm({ ...form, payloadLbs: e.target.value })}
       />
+
       <textarea
         className="w-full border p-2 rounded"
         placeholder="Notes"
         value={form.notes}
         onChange={(e) => setForm({ ...form, notes: e.target.value })}
       />
+
       <button
         type="submit"
         className="w-full rounded bg-black text-white font-bold py-2 transition hover:bg-white hover:text-black cursor-pointer border border-black"
@@ -133,3 +139,4 @@ export default function QuoteForm() {
     </form>
   );
 }
+
