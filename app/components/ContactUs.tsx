@@ -93,7 +93,6 @@ export default function ContactUs() {
           </a>
         </p>
         <p>Location: Mississauga, Ontario</p>
-        <p className="text-black font-bold">Hours: Mon-Fri, 8:00-18:00 (ET)</p>
       </div>
     </section>
   );
